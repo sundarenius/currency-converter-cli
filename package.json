@@ -1,0 +1,13 @@
+{
+  "name": "currency-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Håkan Sundström",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "ora": "^5.1.0"
+  }
+}
