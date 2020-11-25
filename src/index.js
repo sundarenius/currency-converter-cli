@@ -26,7 +26,7 @@ const getCurrencies = async () => {
     spinner.succeed()
     logCurrencies(res)
   } catch (err) {
-    spinner.fail()
+    spinner.fail('Could not fetch, please try again')
   }
 }
 
