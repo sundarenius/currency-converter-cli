@@ -72,7 +72,6 @@ const _START_ = async (args) => {
     spinner.stop()
     noArgsMessage()
   } else if (args[0] === types._CURRENCIES_) {
-    spinner.stop()
     await getCurrencies()
   } else {
     const res = await GET(`https://api.exchangeratesapi.io/latest?base=${base}&symbols=${toCurrency}`)
