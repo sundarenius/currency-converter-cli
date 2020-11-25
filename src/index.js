@@ -51,9 +51,10 @@ const calculate = (data, amount, base, toCurrency) => {
   const { rates } = data
   const toCurrencyValue = rates[toCurrency]
   const calulated = formatAmount((Number(amount) * Number(toCurrencyValue)).toFixed(2), toCurrency)
+  const fromAmount = formatAmount((Number(amount)).toFixed(2), base)
 
   console.log('')
-  console.log(`${amount} ${base} is equal to ${chalk.green(calulated)}. (${base} -> ${toCurrency})`)
+  console.log(`${fromAmount} ${base} is equal to ${chalk.green(calulated)}. (${base} -> ${toCurrency})`)
 }
 
 const _START_ = async (args) => {
