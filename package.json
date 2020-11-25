@@ -2,12 +2,31 @@
   "name": "currency-converter",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Håkan Sundström",
+  "author": "Håkan Sundström <sundarenius@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "files": [
+    "./src"
+  ],
+  "bin": {
+    "currency": "./src/index.js"
+  },
+  "keywords": [
+    "cli",
+    "currency",
+    "currency converter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sundarenius/currency-converter-cli"
+  },
   "dependencies": {
     "chalk": "^4.1.0",
     "esm": "^3.2.25",
     "ora": "^5.1.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Sundarenius/currency-converter-cli/issues"
+  },
+  "homepage": "https://github.com/Sundarenius/currency-converter-cli#readme"
 }

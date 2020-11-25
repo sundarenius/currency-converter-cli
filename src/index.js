@@ -1,4 +1,5 @@
-import service from './service.js'
+#!/usr/bin/env node
+
 import chalk from 'chalk'
 import ora from 'ora'
 import GET from './service.js'
@@ -41,8 +42,8 @@ const formatAmount = (amount, currency) => {
 const noArgsMessage = () => {
   spinner.stop()
   console.log(`Hi, you did not provide any amount and/or ${types._CURRENCIES_}.`)
-  console.log(`To see available currency codes, type "node index.js ${types._CURRENCIES_}"`)
-  console.log('Example command, "node index.js 15 EUR USD"')
+  console.log(`To see available currency codes, type "currency ${types._CURRENCIES_}"`)
+  console.log('Example command, "currency 15 EUR USD"')
   console.log('That would convert 15 EUR to USD')
 }
 
@@ -52,7 +53,7 @@ const calculate = (data, amount, base, toCurrency) => {
   const calulated = formatAmount((Number(amount) * Number(toCurrencyValue)).toFixed(2), toCurrency)
 
   console.log('')
-  console.log(`${amount} ${base} is equal to ${chalk.green(calulated)}`)
+  console.log(`${amount} ${base} is equal to ${chalk.green(calulated)}. (${base} -> ${toCurrency})`)
 }
 
 const _START_ = async (args) => {
