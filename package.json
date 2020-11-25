@@ -1,14 +1,10 @@
 {
   "name": "@hakansundstrom/currency-converter-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "author": "Håkan Sundström <sundarenius@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "files": [
-    "./src/index.js",
-    "./src/service.js"
-  ],
   "bin": {
     "currency": "./src/index.js"
   },
