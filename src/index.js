@@ -14,7 +14,6 @@ const types = {
 
 const logCurrencies = (_currencies) => {
   const currencies = JSON.parse(_currencies)
-  console.log(currencies)
   for (let c in currencies) {
     console.log(`Currency code: "${chalk.green(c)}" is for ${chalk.blue(currencies[c])}`)
   }
@@ -71,7 +70,7 @@ const _START_ = async (args) => {
   if (args.length === 0) {
     spinner.stop()
     noArgsMessage()
-  } else if (args[0] === types._CURRENCIES_) {
+  } else if (args[0] === types._CURRENCIES_ || args.length === 1) {
     await getCurrencies()
   } else {
     const res = await GET(`https://api.exchangeratesapi.io/latest?base=${base}&symbols=${toCurrency}`)
