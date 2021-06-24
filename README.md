@@ -12,3 +12,7 @@ will give you the converted currency.
  3. Run `currency 150 USD EUR` to convert 150 USD to EUR
  4. Run `currency currencies` to see available currency codes.
 ```
+
+## Maintainers
+This project was built by Håkan Sundström and is maintained by him.
+https://github.com/Sundarenius
